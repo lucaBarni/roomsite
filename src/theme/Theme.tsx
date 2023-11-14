@@ -9,7 +9,7 @@ const options: ThemeOptions = {
       contrastText: "#fff",
     },
     secondary: {
-      light: "#ff7961",
+      light: "#79D74B",
       main: "#f44336",
       dark: "#ba000d",
       contrastText: "#000",

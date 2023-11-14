@@ -1,41 +1,53 @@
-import { Button,  useTheme, Container, Stack, TextField, Typography } from '@mui/material'
+import { Button, Container, Stack, Typography, useTheme } from '@mui/material'
 import React from 'react'
 
-
 const home = () => {
-  const theme = useTheme();
-  return (
- <>
-     <Container
-       style={{
-         color: theme.palette.primary.main,
-       }}>
+    const theme = useTheme();
+    return (
+        <>
 
-      <Stack spacing={"1rem"} marginTop={'2vh'}>
-        
-        <Typography variant="h4" color={"inherit"}>Home</Typography>
+            <Container
+                style={{
+                    color: theme.palette.primary.main,
+                }}>
+                <Stack>
 
-        <TextField id="outlined-basic" label="Ingresar ubicacion" variant="outlined" />
-        <TextField id="outlined-basic" label="Seleccione huespedes" variant="outlined" />
-        <TextField id="outlined-basic" label="Ingrese fechas" variant="outlined" />
-        
-        <Button
-          variant="contained"
-          style={{
-            marginTop: "2rem",
-          }}
-          
-        >Buscar</Button>  
+                    <Typography variant="h4" marginTop={'5vh'} color={"inherit"}>Bienvenido!</Typography>
 
-        <hr/>
-
-        <Typography color={"inherit"}>Vistos anteriormente</Typography>
+                    <Stack spacing={"1rem"} marginTop={'50vh'}>
 
 
-    </Stack>      
-    </Container>
-  </>
-  )
+
+
+
+                        <Typography textAlign={"center"} color={"inherit"}>¡Usar Roomsite es realmente sencillo! Sigue estos tips para que tu experiencia sea realmente sensacional</Typography>
+
+
+                    </Stack>
+
+                    <Button
+                        variant="contained"
+                        style={{
+                            marginTop: "2rem",
+                        }}
+
+                    >SIGUIENTE</Button>
+
+                    <Typography textAlign={"center"} color={"inherit"}>¿No quieres ver esto?</Typography>
+
+                    <Container
+                        style={{
+                            color: theme.palette.secondary.light,
+                        }}>
+
+                        <Typography textAlign={"center"} color={"inherit"}>SALTAR</Typography>
+                    </Container>
+
+                </Stack>
+            </Container>
+
+        </>
+    )
 }
 
 export default home
